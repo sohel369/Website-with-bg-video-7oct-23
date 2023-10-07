@@ -60,19 +60,18 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(160, 160, 152, 0.219);
+    background: rgba(20, 20, 15, 0.74);
     transition: 0.4s;
     transform: scale(0);
     border-radius: 4px;
 }
 
 .nav_links li a:hover::before {
-    transform: scale(1.2);
-    color: white;
+    transform: scale(1.3);
 }
 
 .btn {
-    background: linear-gradient(90deg, #a30707 40%, rgb(5, 44, 128) 60%);
+    background: linear-gradient(90deg, #6b0404 40%, rgb(197, 34, 6) 60%);
     color: white;
     padding: 10px 30px;
     cursor: pointer;
