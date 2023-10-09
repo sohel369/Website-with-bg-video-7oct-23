@@ -141,9 +141,55 @@ nav {
     border-radius: 10px;
 }
 
-@media(max-aspect-ratio: 16/9) {
+#span2 {
+    position: absolute;
+    top: 52px;
+    right: 20px;
+    color: black;
+    font-size: 40px;
+    display: none;
+}
+
+
+/* @media(max-aspect-ratio: 16/9) {
     .back_video {
         width: auto;
         height: 100%;
+    }
+} */
+
+@media screen and (max-width:425px) {
+    #span2 {
+        display: block;
+        font-size: 30px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .header {
+        height: 100vh;
+        transition: height 2s;
+        display: none;
+        width: 100%;
+    }
+    .content {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        width: 100%;
+    }
+    .header nav ul li {
+        display: block;
+        margin: 20px;
+        text-align: center;
+    }
+    .btn {
+        display: none;
     }
 }

@@ -9,25 +9,30 @@
 </head>
 
 <body>
-    <div class="header">
+    <span id="span2" onclick="closenav2()">&#9776;</span>
+
+    <div class="header" id="unoder">
+
         <video autoplay loop class="back_video" muted plays-inline>
             <source src="./media/4K Bokeh Particle Background Free VJ loop - VJ Loops 2020 - Free Motion backgrou.mp4" type="video/mp4">
         </video>
-        <nav>
-            <img src="./img/download-removebg-preview.png" alt="logo" class="logo">
-            <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="btn">Sign Up</li>
-            </ul>
-        </nav>
+        <div class="navv" onclick="opennav()">
+            <nav>
+                <img src="./img/download-removebg-preview.png" alt="logo" class="logo">
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="btn"><a href="#">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
 
 
         <div class="content">
             <h1>Learn Anything Online</h1>
-            <form action="./img/279232447_277361117930237_8879390079188425099_n.jpg">
+            <form action="./img/279232447_277361117930237_8879390079188425099_n.jpg" class="act">
                 <input type="text" placeholder="&#x270e;Enter keywords">
                 <button type="submit">Find Courses</button>
             </form>
@@ -41,7 +46,18 @@
     </div>
 
 
+    <script>
+        let sohel = document.getElementById('unoder');
 
+        function closenav2() {
+            sohel.style.display = "block"
+            sohel.style.transition = "2s"
+        }
+
+        function openav2() {
+            sohel.style.display = "none"
+        }
+    </script>
 </body>
 
 </html>
