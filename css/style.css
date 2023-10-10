@@ -169,8 +169,8 @@ nav {
     .header {
         height: 100vh;
         transition: height 2s;
-        display: none;
         width: 100%;
+        display: none;
     }
     .content {
         display: none;
